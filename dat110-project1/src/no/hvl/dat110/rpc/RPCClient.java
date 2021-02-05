@@ -1,5 +1,5 @@
 package no.hvl.dat110.rpc;
-//Test
+
 import no.hvl.dat110.TODO;
 import no.hvl.dat110.messaging.*;
 
