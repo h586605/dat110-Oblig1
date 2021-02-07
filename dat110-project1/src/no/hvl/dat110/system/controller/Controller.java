@@ -36,6 +36,10 @@ public class Controller  {
 		
 		for (int i = 0; i < N; i++) {
 			int temp = sensor.read();
+			try {
+				Thread.sleep(1500); //For å få forskjellig resultat på målingene.
+			} catch (InterruptedException e) {
+			}
 			display.write(String.valueOf(temp));
 		}
 		
