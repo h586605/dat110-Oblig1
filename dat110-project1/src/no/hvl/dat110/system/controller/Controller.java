@@ -28,6 +28,9 @@ public class Controller  {
 		display = new Display();
 		sensor = new Sensor();
 		
+		display.register(displayclient);
+		sensor.register(sensorclient);
+		
 		displayclient.register(stopdisplay);
 		sensorclient.register(stopsensor);
 		
