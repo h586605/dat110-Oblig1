@@ -2,7 +2,6 @@ package no.hvl.dat110.rpc;
 
 import java.util.HashMap;
 
-import no.hvl.dat110.TODO;
 import no.hvl.dat110.messaging.Connection;
 import no.hvl.dat110.messaging.Message;
 import no.hvl.dat110.messaging.MessagingServer;
@@ -43,11 +42,11 @@ public class RPCServer {
 		    byte[] reply = services.get(rpcid).invoke(req);
 		    
 		    connection.send(new Message(reply));
-	
 		    
 		   if (rpcid == RPCCommon.RPIDSTOP) {
 			   stop = true;
 		   }
+		   
 		}
 	
 	}

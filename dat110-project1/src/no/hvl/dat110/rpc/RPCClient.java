@@ -1,6 +1,5 @@
 package no.hvl.dat110.rpc;
 
-import no.hvl.dat110.TODO;
 import no.hvl.dat110.messaging.*;
 
 public class RPCClient {
@@ -35,8 +34,7 @@ public class RPCClient {
 		
 		connection.send(new Message(rpcreply));
 		
-		return connection.receive().getData();
-		
+		return connection.receive().getData();		
 		
 	}
 
