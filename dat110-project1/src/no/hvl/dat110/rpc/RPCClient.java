@@ -31,7 +31,10 @@ public class RPCClient {
 	
 	public byte[] call(byte[] rpcrequest) {
 		
-		connection.send(new Message(rpcrequest));
+		byte[] rpcreply = rpcrequest;
+		
+		connection.send(new Message(rpcreply));
+		
 		return connection.receive().getData();
 		
 		
